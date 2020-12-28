@@ -1,0 +1,23 @@
+name: CI-Mac
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+
+    runs-on: macos-11.0
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: configure
+      run: ./configure --disable-netcdf --disable-fortran
+    - name: make
+      run: make
+    - name: make check
+      run: make check
+    - name: make install
+      run: make install
