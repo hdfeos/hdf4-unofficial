@@ -14,7 +14,7 @@ extern void fline(), cline();
 extern int netcdf_flag;
 extern int c_flag;
 extern int fortran_flag;
-
+extern void derror(const char *fmt, ...);
 static void
 cl_netcdf()
 {

@@ -120,6 +120,9 @@ static char SccsId[] = "$Id: ncgen.y 4928 2007-09-06 21:48:49Z epourmal $";
 #include        <string.h>
 #include	<stdlib.h>
 #include        "ncgen.h"
+int yylex();
+yyerror(char * str);
+const char *nctype(nc_type);
 
 typedef struct Symbol {		/* symbol table entry */
 	char    	*name;

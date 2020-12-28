@@ -7,6 +7,7 @@
 /* yacc source for "ncgen", a netCDL parser and netCDF generator */
 
 %{
+int yylex();
 #ifndef lint
 static char SccsId[] = "$Id$";
 #endif

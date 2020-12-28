@@ -20,6 +20,7 @@
 #include <assert.h>
 #endif /* DEBUG */
 
+#include <unistd.h>
 #include    <string.h>
 #include    <errno.h>
 #include    "local_nc.h"

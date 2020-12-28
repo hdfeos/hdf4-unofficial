@@ -3,7 +3,7 @@
  *   See netcdf/COPYRIGHT file for copying and redistribution conditions.
  *   $Id$
  *********************************************************************/
-
+#include <unistd.h>
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>

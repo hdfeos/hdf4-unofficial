@@ -3,7 +3,7 @@
  *   See netcdf/README file for copying and redistribution conditions.
  *   $Id$
  *********************************************************************/
-
+#include <unistd.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -14,6 +14,8 @@
 #include "ncdump.h"
 #include "dumplib.h"
 #include "vardata.h"
+
+extern void derror(const char *fmt, ...);
 
 static const char * type_name(nc_type type);
 

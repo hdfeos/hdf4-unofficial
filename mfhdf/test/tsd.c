@@ -42,7 +42,8 @@ test_sd()
     TESTING("SDstart for file with no write permission (tsd.c)");
 
     /* delete the file just to be sure */
-    unlink(FILE_NAME);
+    int dirfd = open(".", O_RDONLY | O_DIRECTORY);
+    unlinkat(dirfd,FILE_NAME,0);
 
     /* Create a file */
     fid = SDstart(FILE_NAME, DFACC_CREATE);

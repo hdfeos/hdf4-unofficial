@@ -14,6 +14,7 @@
 /* $Id: tfile.c 5218 2009-08-29 04:21:49Z bmribler $ */
 
 #include "mfhdf.h"
+#include "local_nc.h"
 
 #ifdef HDF
 
@@ -375,6 +376,7 @@ test_longfilename()
 
    BMR - Jun 06, 2016
 *********************************************************************/
+
 
 static int
 test_fileformat()

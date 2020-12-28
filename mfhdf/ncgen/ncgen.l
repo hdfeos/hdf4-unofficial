@@ -16,7 +16,7 @@ void expand_escapes();
 #include <string.h>
 #include <ctype.h>
 #include <limits.h>
-#include "ncgentab.h"
+#include "ncgentab.c"
 %}
 
 escquote    \\\"

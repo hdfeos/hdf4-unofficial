@@ -60,6 +60,9 @@ static intn test_empty_SDSs();
 static intn test_chunked_partial();
 static intn test_chkcmp_SDSs();
 static intn test_extend_SDSs();
+extern intn
+SDgetdatainfo(int32 sdsid, int32 *chk_coord, uintn start_block,
+              uintn info_count, int32 *offsetarray, int32 *lengtharray);
 
 #define SIMPLE_FILE     "datainfo_simple.hdf"  /* data file */
 #define X_LENGTH      10
