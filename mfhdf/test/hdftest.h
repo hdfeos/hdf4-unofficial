@@ -77,4 +77,9 @@ void verify_datasize(int32 sds_id, int32 data_size, char* sds_name);
 /* Find and open an SDS by name */
 int32 get_SDSbyName(int32 sd_id, char* sds_name);
 
+int verify_info_data(
+	int32 sds_id,
+	int32 expected_dimsize,
+	int16 *result);
 
+intn make_datafilename(char* basename, char* testfile, unsigned int size);
