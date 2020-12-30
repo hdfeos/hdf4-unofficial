@@ -18,7 +18,7 @@ jobs:
     - name: autoreconf
       run: autoreconf -fvi
     - name: configure
-      run: ./configure --disable-netcdf --disable-fortran
+      run: ./configure --disable-netcdf --disable-fortran --enable-hdf4-xdr
     - name: make
       run: make
     - name: make check
